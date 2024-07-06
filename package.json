@@ -1,6 +1,6 @@
 {
   "name": "nextjs14-plop-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plop templates for Next.js 14, supporting both TypeScript and JavaScript.",
   "main": "plopfile.js",
   "scripts": {
