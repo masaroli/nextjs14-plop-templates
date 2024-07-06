@@ -1,6 +1,8 @@
-# nextjs14-plop-templates
+# Next.js Plop Templates
 
-Plop templates for Next.js 14, supporting both TypeScript and JavaScript. This package includes templates for components, API routes, and pages, making it easier to scaffold your Next.js 14 projects quickly and consistently.
+[![npm version](https://badge.fury.io/js/nextjs14-plop-templates.svg)](https://badge.fury.io/js/nextjs14-plop-templates)
+
+Plop templates for Next.js 14 , supporting both TypeScript and JavaScript.
 
 ## Features
 
@@ -52,6 +54,15 @@ npm run plop
    - Page
 
 5. Follow the prompts to generate your files.
+
+## Compatibility
+
+### This package is compatible with:
+
+- Next.js 14
+- Next.js 15
+
+The templates and generators provided by this package are designed to work with Next.js 14 and 15. They should continue to function correctly unless there are significant structural changes in future Next.js releases.
 
 ## Generators
 
