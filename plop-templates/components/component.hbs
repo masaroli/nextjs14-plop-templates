@@ -1,0 +1,16 @@
+{{#if isTypeScript}}
+import { ReactElement } from 'react';
+
+type {{pascalCase name}}Props = {};
+
+{{/if}}
+const {{pascalCase name}} = ({}{{#if isTypeScript}}: {{pascalCase name}}Props{{/if}}){{#if isTypeScript}}: ReactElement{{/if}} => {
+
+  return (
+    <div>
+      {{pascalCase name}}
+    </div>
+  );
+}
+
+export default {{pascalCase name}};

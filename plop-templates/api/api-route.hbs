@@ -1,0 +1,19 @@
+import { NextResponse } from "next/server";
+{{#if isTypeScript}}import { NextRequest } from "next/server";{{/if}}
+
+{{#if hasDinamycRoutes}}
+{{#each methods}}
+  export async function {{this.type}}(_req{{#if ../isTypeScript}}: NextRequest{{/if}}, { params }{{#if ../isTypeScript}}: { params: { {{#each dynamicRoutes}}{{this}}: string{{#unless @last}}, {{/unless}}{{/each}} } }{{/if}}) {
+    const { {{#each dynamicRoutes}}{{this}}{{#unless @last}}, {{/unless}}{{/each}} } = params
+    return NextResponse.json({ data: "", success: true });
+  }
+
+{{/each}}
+{{else}}
+{{#each methods}}
+  export async function {{this.type}}(_req{{#if ../isTypeScript}}: NextRequest{{/if}}) {
+    return NextResponse.json({ data: "", success: true });
+  }
+
+{{/each}}
+{{/if}}
