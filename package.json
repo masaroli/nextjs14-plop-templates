@@ -1,6 +1,6 @@
 {
   "name": "nextjs14-plop-templates",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Plop templates for Next.js 14, supporting both TypeScript and JavaScript.",
   "main": "plopfile.js",
   "scripts": {
@@ -17,5 +17,9 @@
   "license": "MIT",
   "devDependencies": {
     "plop": "^2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masaroli/nextjs14-plop-templates"
   }
 }
